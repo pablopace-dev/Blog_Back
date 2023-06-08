@@ -22,7 +22,7 @@ app.use('/wakeup', (req, res) => {
 
     res.status(200).json({
         ok: true,
-        msg: `I'm awake (Blog - Front)`
+        msg: `I'm awake (Blog - Back)`
     });
 
 });
