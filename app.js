@@ -17,6 +17,17 @@ app.use('/api/entries', require('./routers/routerEntries'));    //Entries router
 app.use('/api/logs', require('./routers/routerLogs'));          //Logs routers
 
 
+//Awake
+app.use('/wakeup', (req, res) => {
+
+    res.status(200).json({
+        ok: true,
+        msg: `I'm awake (Blog - Front)`
+    });
+
+});
+
+
 //404
 app.use((req, res, next) => { res.status(404).send({ msg: `Ruta no encontrada: ${req.url}` }); });
 
