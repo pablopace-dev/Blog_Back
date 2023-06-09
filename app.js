@@ -20,6 +20,8 @@ app.use('/api/logs', require('./routers/routerLogs'));          //Logs routers
 //Awake
 app.use('/wakeup', (req, res) => {
 
+    console.log(`I'm awake (Blog - Back)`);
+
     res.status(200).json({
         ok: true,
         msg: `I'm awake (Blog - Back)`
