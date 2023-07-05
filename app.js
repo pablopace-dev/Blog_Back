@@ -14,6 +14,20 @@ app.use(express.json());                             // Parse application/json
 
 app.use('/api/users', require('./routers/routerUsers'));        //User routers
 app.use('/api/entries', require('./routers/routerEntries'));    //Entries routers
+app.use('/api/logs', require('./routers/routerLogs'));          //Logs routers
+
+
+//Awake
+app.use('/wakeup', (req, res) => {
+
+    console.log(`I'm awake (Blog - Back)`);
+
+    res.status(200).json({
+        ok: true,
+        msg: `I'm awake (Blog - Back)`
+    });
+
+});
 
 
 //404

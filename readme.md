@@ -106,7 +106,7 @@ El motor de base de datos utilizado es postgreSQL, que esta subido en **[elephan
 * Ruta: **/api/entries/email/:email**
 * Método: **GET**
 * Querys opcionales: 
-    * **limit**, cantidad de entradas por página (Por defecto: 10).
+    * **limit**, cantidad de entradas por página (Por defecto: 5).
     * **page**, la página que quieres que devuelva (Por defecto: 1).
 
 #### **getEntryByID:** 
@@ -145,7 +145,7 @@ El motor de base de datos utilizado es postgreSQL, que esta subido en **[elephan
 #### Requiere:
 * El puerto del servidor: **PORT**=3000
 * La conexión a la BD:
-    * **ELEPHANT_USER**=ucyoiydj
-    * **ELEPHANT_PASS**=AP8gl95xBgSEjFNy0OAK1O3ssRJbk69n
-    * **ELEPHANT_HOST**=rogue.db.elephantsql.com
-    * **ELEPHANT_DB**=ucyoiydj
+    * **ELEPHANT_USER**=
+    * **ELEPHANT_PASS**=
+    * **ELEPHANT_HOST**=
+    * **ELEPHANT_DB**=
